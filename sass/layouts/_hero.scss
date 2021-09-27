@@ -1,0 +1,24 @@
+.hero__title {
+  font-size: 72px;
+  line-height: 1.18;
+
+  color: var(--inverse-main-color);
+}
+
+.hero__text {
+  color: var(--inverse-accent-color);
+}
+
+.hero__label {
+  color: var(--inverse-label-color);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero__content {
+  // width: calc(100% / 12 * 5);
+  max-width: 500px;
+}

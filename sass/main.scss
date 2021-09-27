@@ -1,4 +1,20 @@
 @import './vendors/modern-normalize';
 @import './utils/variables';
-@import './base/common';
+@import './base/_common';
+@import './base/_container';
+@import './components/_dark-bg';
+@import './components/_grids';
+@import './components/logo';
+@import './components/feedback';
+@import './components/_button';
+@import './components/_social';
+@import './components/pages';
+@import './components/web-pages';
 @import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+
+@import './layouts/prices';
+@import './layouts/_contacts';
+@import './layouts/_info';
+@import './layouts/_team';
