@@ -11,7 +11,8 @@
   padding: 12px 20px;
   border-radius: 25px;
 
-  color: var(--secondary-color);
+  color: var(--inverse-main-color);
+  background-color: transparent;
   border: 1px solid #ff6c00;
 
   &:focus,
@@ -26,5 +27,10 @@
 }
 
 .button--inverse {
-  color: var(--inverse-main-color);
+  color: var(--secondary-color);
+}
+
+.button_thumb {
+  display: flex;
+  justify-content: center;
 }
