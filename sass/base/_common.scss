@@ -51,7 +51,6 @@ img {
 
 .list {
   list-style: none;
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -60,6 +59,7 @@ img {
 .link {
   text-decoration: none;
   font-style: normal;
+  cursor: pointer;
   &:focus,
   &:hover {
     color: var(--accent-color);
@@ -78,6 +78,8 @@ img {
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
 }
 
 .section-title {
@@ -86,7 +88,11 @@ img {
   color: var(--secondary-color);
 }
 .section-title--accent {
+  font-size: 42px;
+  line-height: 1.17;
+
   color: var(--inverse-main-color);
+  margin-bottom: 44px;
 }
 
 .label {
@@ -97,6 +103,8 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  margin-bottom: 20px;
 }
 
 .copyright {

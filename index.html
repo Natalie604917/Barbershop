@@ -77,19 +77,19 @@
       </div>
     </section>
     <section class="section about">
-      <div class="container">
-      <ul class="list about__list">
-        <li class="about__item">
+      <div class="container flexbox">
+      <ul class="list flexbox content-box">
+        <li class="content-box ">
           <img src="./images/about/img 1.jpg" width="270" height="445" alt="барбер за работой" />
         </li>
-        <li class="about__item">
+        <li class="content-box">
           <img src="./images/about/img 2.jpg" width="270" height="445" alt="стильная стрижка 2021" />
         </li>
       </ul>
-      <div>
+      <div class="content-box">
         <p class="label about__label">О НАС</p>
         <h2 class="title section-title">Лучший Барбершоп твоего города</h2>
-        <p>
+        <p class="description">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно
           к нам.
         </p>
@@ -107,7 +107,8 @@
     <section class="section prices dark-bg">
       <div class="container">
       <p class="label prices__label">Проведи время в компании лучших мастеров</p>
-      <h2 class="title section-title">Услуги и цены</h2>
+      <h2 class="title section-title--accent ">Услуги и цены</h2>
+      <div class="price-wrap">
       <ul class="list prices__list">
         <li class="prices__item">
           <span>Мужская стрижка</span>
@@ -127,7 +128,7 @@
         </li>
       </ul>
       <ul class="list prices__list">
-        <li>
+        <li class="prices__item">
           <span>Cтрижка у стажера</span>
           <span>от 50 грн.</span>
         </li>
@@ -144,12 +145,13 @@
           <span>от 200 грн.</span>
         </li>
       </ul>
+    </div>
       <a class="link button button--inverse" href="./">онлайн-запись</a>
     </div>
     </section>
     <section class="section benefits">
-      <div class="container">
-      <ul class="list">
+      <div class="container flexbox">
+      <ul class="list content-box">
         <li>
           <span>
             600
@@ -179,7 +181,7 @@
           <p>Подарков постоянным клиентам</p>
         </li>
       </ul>
-      <div>
+      <div class="content-box">
         <p class="label">старая традиционная школа</p>
         <h2 class="title section-title">Почему приходят именно к нам?</h2>
         <p>
@@ -192,7 +194,7 @@
     <section class="section team">
       <div class="container team__container">
       <p class="label team__label">для настоящих ценителей атмосферы</p>
-      <h2 class="title section-title">Наши мастера</h2>
+      <h2 class="title section-title team__title">Наши мастера</h2>
       <ul class="list team__list grid">
         <li class="grid__item team__item">
           <img src="./images/team/John_Smith.jpg" width="370" height="346" alt="John Smith" />
@@ -303,12 +305,11 @@
     </div>
     </section>
     <div class="dark-bg ">
-      <section class="section appointment">
-        <div class="container">
+      <div class="container flexbox">
+      <section class="section appointment content-box">
         <h2 class="title section-title--accent">Онлайн-запись</h2>
-      </div>
       </section>
-      <section class="section contacts">
+      <section class="section contacts content-box">
         <div class="container">
         <h2 class="title section-title--accent">Контакты</h2>
         <address>
@@ -335,6 +336,7 @@
         </section>
       </div>
       </section>
+    </div>
     </div>
   </main>
   <footer class="footer">

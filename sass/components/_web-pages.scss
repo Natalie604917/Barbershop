@@ -1,7 +1,17 @@
+.web-pages {
+  display: inline-flex;
+}
+
 .web-pages__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--primary-color);
+  margin-left: 40px;
+}
+
+.pages {
+  display: flex;
+  justify-content: flex-end;
 }
