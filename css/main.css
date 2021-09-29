@@ -275,6 +275,7 @@ summary {
   --inverse-label-color: rgba(157, 164, 189, 0.6);
   --placeholder-color:rgba(157, 164, 189, 0.4);
   --bg-color: #191C26;
+  --bg-light-color: #F7F7F7;
   --grid__item: 1;
 }
 
@@ -290,7 +291,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 h1,
@@ -386,6 +386,14 @@ img {
   text-transform: uppercase;
   color: var(--primary-color);
   margin-bottom: 20px;
+}
+
+.decor::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  color: currentColor;
 }
 
 .copyright {
@@ -624,6 +632,9 @@ input::placeholder {
 
 .header {
   padding: 32px 0;
+  background: url(/images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__title {
@@ -672,6 +683,10 @@ input::placeholder {
 
 .description {
   margin-bottom: 20px;
+}
+
+.benefits__text {
+  background-color: var(--bg-light-color);
 }
 
 .price-wrap {
@@ -737,6 +752,10 @@ input::placeholder {
 
 .info__text {
   color: var(--inverse-accent-color);
+}
+
+.team {
+  background-color: var(--bg-light-color);
 }
 
 .team__item {
