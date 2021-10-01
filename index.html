@@ -14,8 +14,9 @@
 </head>
 
 <body>
-  <header class="header dark-bg">
-    <div class="container header-container">
+ 
+  <header class="header">
+    <div class="container header__container">
       <nav class="navigation">
         <a class="link logo" href="./">
           <svg class="" width="69" height="56">
@@ -48,34 +49,39 @@
     </div>
   </header>
   <main>
-    <section class="hero dark-bg">
-      <div class="container">
+    <section class="hero">
+      <div class="container hero__container">
         <div class="hero__content">
-          <p class="label hero__label">A hair salon for men in Kyiv</p>
+          <p class="label hero__ line">A hair salon for men in Kyiv</p>
           <h1 class="title hero__title">BarberShop</h1>
           <p class="hero__text">
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
             вкусом.
           </p>
         </div>
-        <ul class="list web-pages">
+        <div class="web-pages">
+        <ul class="list web-pages__list line">
           <li class="web-pages__item">
             <a class="link web-pages__link" href="./" target="_blank" rel="noopener noreferrer">Instagram</a>
           </li>
           <li class="web-pages__item">
             <a class="link web-pages__link" href="./" target="_blank" rel="noopener noreferrer">Youtube</a>
           </li>
+        </div>
         </ul>
-        <ul class="list pages">
-          <li class="pages__item">
-            <a class="link pages__link" href="./">Назад</a>
+        <div class="pages">
+        <ul class="list pages__list">
+          <li class="pages__item ">
+            <a class="link pages__link pages__link--active" href="./">Назад</a>
           </li>
-          <li class="pages__item">
-            <a class="link pages__link" href="./">Вперед</a>
+          <li class="pages__item ">
+            <a class="link pages__link pages__link--active" href="./">Вперед</a>
           </li>
         </ul>
       </div>
+      </div>
     </section>
+  
     <section class="section about">
       <div class="container flexbox">
         <ul class="list flexbox content-box">
@@ -87,7 +93,7 @@
           </li>
         </ul>
         <div class="content-box">
-          <p class="label about__label">О НАС</p>
+          <p class="label about__label line">О НАС</p>
           <h2 class="title section-title">Лучший Барбершоп твоего города</h2>
           <p class="description">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
@@ -104,44 +110,44 @@
         </div>
       </div>
     </section>
-    <section class="section prices dark-bg">
+    <section class="section prices">
       <div class="container prices__container">
-        <p class="label prices__label">Проведи время в компании лучших мастеров</p>
+        <p class="label prices__label line">Проведи время в компании лучших мастеров</p>
         <h2 class="title section-title--accent ">Услуги и цены</h2>
-        <div class="price-wrap">
+        <div class="prices-wrap">
           <ul class="list prices__list">
             <li class="prices__item">
-              <span>Мужская стрижка</span>
+              <span class="prices__servise">Мужская стрижка</span>
               <span>от 300 грн.</span>
             </li>
             <li class="prices__item">
-              <span>Стрижка бороды</span>
+              <span class="prices__servise">Стрижка бороды</span>
               <span>от 200 грн.</span>
             </li>
             <li class="prices__item">
-              <span>Стрижка усов</span>
+              <span class="prices__servise">Стрижка усов</span>
               <span>от 200 грн.</span>
             </li>
             <li class="prices__item">
-              <span>Бритье опасной бритвой</span>
+              <span class="prices__servise">Бритье опасной бритвой</span>
               <span>от 200 грн.</span>
             </li>
           </ul>
           <ul class="list prices__list">
             <li class="prices__item">
-              <span>Cтрижка у стажера</span>
+              <span class="prices__servise">Cтрижка у стажера</span>
               <span>от 50 грн.</span>
             </li>
             <li class="prices__item">
-              <span>Стрижка под насадку</span>
+              <span class="prices__servise">Стрижка под насадку</span>
               <span>от 200 грн.</span>
             </li>
             <li class="prices__item">
-              <span>Детская стрижка (до 12 лет)</span>
+              <span class="prices__servise">Детская стрижка (до 12 лет)</span>
               <span>от 300 грн.</span>
             </li>
             <li class="prices__item">
-              <span>Камуфлирование седины</span>
+              <span class="prices__servise">Камуфлирование седины</span>
               <span>от 200 грн.</span>
             </li>
           </ul>
@@ -153,7 +159,8 @@
     </section>
     <section class="section benefits">
       <div class="container flexbox">
-        <ul class="list content-box">
+        
+        <ul class="list benefits__list content-box">
           <li class="benefits__item">
             <span class="benefits__text">
               600
@@ -183,8 +190,9 @@
             <p class="benefits__text">Подарков постоянным клиентам</p>
           </li>
         </ul>
+      
         <div class="content-box">
-          <p class="label">старая традиционная школа</p>
+          <p class=" label line">старая традиционная школа</p>
           <h2 class="title section-title">Почему приходят именно к нам?</h2>
           <p>
             О нас говорят только хорошее. Но лучше 1 раз увидеть и
@@ -195,7 +203,7 @@
     </section>
     <section class="section team">
       <div class="container team__container">
-        <p class="label team__label">для настоящих ценителей атмосферы</p>
+        <p class="label team__label line">для настоящих ценителей атмосферы</p>
         <h2 class="title section-title team__title">Наши мастера</h2>
         <ul class="list team__list grid">
           <li class="grid__item team__item">
@@ -313,7 +321,7 @@
     <section class="section gallery">
       <div class="container">
         <h2 class="title visually-hidden">галерея</h2>
-        <p class="label gallery__label">На латинском языке “барба” означает “борода”</p>
+        <p class="label gallery__label line">На латинском языке “барба” означает “борода”</p>
         <ul class="list gallery__list grid">
           <li class="gallery__item grid__item">
             <img src="./images/gallery/gallery_1.jpg" width="270" height="360" alt="стрижка" />
@@ -386,7 +394,7 @@
             </address>
             <section class="info">
               <div class="container">
-                <h3 class="label info__label">время работы</h3>
+                <h3 class="label info__label line">время работы</h3>
                 <p class="info__text">Ежедневно с 9:00 до 22:00</p>
               </div>
             </section>
@@ -398,14 +406,16 @@
   <footer class="footer">
     <div class="container footer__container">
       <p class="copyright">&copy;Copyright 2020</p>
-      <ul class="list web-pages">
-        <li class="web-pages__item">
+      <div class="web-pages">
+      <ul class="list web-pages__list">
+        <li class="web-pages__item line">
           <a class="link web-pages__link" href="./" target="_blank" rel="noopener noreferrer">Instagram</a>
         </li>
         <li class="web-pages__item">
           <a class="link web-pages__link" href="./" target="_blank" rel="noopener noreferrer">Youtube</a>
         </li>
       </ul>
+    </div>
     </div>
   </footer>
 </body>

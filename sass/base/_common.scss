@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid red;
+  outline: 2px solid red;
 }
 
 h1,
@@ -96,6 +96,8 @@ img {
 }
 
 .label {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -107,12 +109,13 @@ img {
   margin-bottom: 20px;
 }
 
-.decor::before {
+.line::before {
   content: '';
   display: inline-block;
   width: 60px;
   height: 1px;
-  color: currentColor;
+  background-color: currentColor;
+  margin-right: 20px;
 }
 .copyright {
   font-weight: 600;

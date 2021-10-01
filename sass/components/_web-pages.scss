@@ -1,5 +1,10 @@
-.web-pages {
+.web-pages__list {
   display: inline-flex;
+  align-items: center;
+}
+.hero .web-pages__list {
+  transform: rotate(-90deg) translateX(50%);
+  padding-bottom: 58px;
 }
 
 .web-pages__link {
@@ -8,10 +13,17 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--primary-color);
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
-.pages {
+
+
+.hero .web-pages {
+  position: absolute;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  width: 115px;
+  bottom: 0;
 }

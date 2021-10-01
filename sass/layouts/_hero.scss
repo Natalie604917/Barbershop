@@ -14,11 +14,22 @@
 }
 
 .hero {
-  min-height: 100vh;
   display: flex;
   align-items: center;
 }
 .hero__content {
   // width: calc(100% / 12 * 5);
   max-width: 500px;
+  margin-left: 200px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
+.hero__container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/images/hero/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 115px 0;
 }
