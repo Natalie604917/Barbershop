@@ -19,10 +19,6 @@
   border-radius: 50%;
   background-color: var(--inverse-main-color);
 
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover .socials__icon,
   &:focus .socials__icon {
     fill: var(--accent-color);

@@ -127,3 +127,11 @@ img {
 .dark-bg {
   background-color: var(--bg-color);
 }
+
+sup {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  vertical-align: super;
+}

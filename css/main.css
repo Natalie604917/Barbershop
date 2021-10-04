@@ -411,6 +411,14 @@ img {
   background-color: var(--bg-color);
 }
 
+sup {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  vertical-align: super;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -477,7 +485,7 @@ img {
   color: var(--inverse-main-color);
   background-color: transparent;
   border: 1px solid #ff6c00;
-  transition-property: background-color;
+  transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -518,9 +526,6 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: var(--inverse-main-color);
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__link:hover .socials__icon,
@@ -746,8 +751,30 @@ input::placeholder {
   margin-bottom: 20px;
 }
 
-.benefits__text {
+.benefits__item {
+  flex-basis: calc((100% - 2 * 30px) / 6 * 2);
+  text-align: center;
   background-color: var(--bg-light-color);
+  padding: 20px;
+}
+
+.benefits__label {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  color: #303030;
+  letter-spacing: 0.05em;
+}
+
+.benefits__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #303030;
+}
+
+.benefits__item:nth-child(2n) {
+  transform: translateY(35px);
 }
 
 .prices {
@@ -803,9 +830,6 @@ input::placeholder {
   display: flex;
   align-items: center;
   color: var(--inverse-accent-color);
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link:hover .contacts__icon,
@@ -829,6 +853,9 @@ input::placeholder {
   margin-right: 16px;
   stroke: var(--inverse-accent-color);
   fill: transparent;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info__label {

@@ -3,10 +3,6 @@
   align-items: center;
   color: var(--inverse-accent-color);
 
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover .contacts__icon,
   &:focus .contacts__icon {
     stroke: var(--accent-color);
@@ -29,4 +25,8 @@
   margin-right: 16px;
   stroke: var(--inverse-accent-color);
   fill: transparent;
+
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

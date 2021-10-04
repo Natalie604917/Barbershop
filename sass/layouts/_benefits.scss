@@ -1,3 +1,28 @@
-.benefits__text {
+.benefits__item {
+  flex-basis: calc((100% - 2 * 30px) / 6 * 2);
+  text-align: center;
   background-color: var(--bg-light-color);
+  padding: 20px;
+}
+
+.benefits__label {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  color: #303030;
+  letter-spacing: 0.05em;
+}
+
+.benefits__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  color: #303030;
+}
+
+.benefits__item:nth-child(2n) {
+  // position: relative;
+  // bottom: -35px;
+  transform: translateY(35px);
 }
