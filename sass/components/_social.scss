@@ -19,8 +19,8 @@
   border-radius: 50%;
   background-color: var(--inverse-main-color);
 
-  &:hover .socials__icon,
-  &:focus .socials__icon {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: var(--accent-color);
   }
 }

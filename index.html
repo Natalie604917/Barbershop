@@ -207,28 +207,28 @@
             <ul class="social list">
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -244,28 +244,28 @@
             <ul class="social list">
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -281,28 +281,28 @@
             <ul class="social list">
               <li class="social__item">
                 <a href="./" class="link social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="./" class="link social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="./" class="link social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="./" class="link social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="socials__icon" width="20" height="20">
+                <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
+                  <svg class="social__icon" width="20" height="20">
                     <use href="./images/svg/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -333,7 +333,7 @@
     <div class="dark-bg ">
       <div class="container flexbox">
         <section class="section appointment content-box">
-          <h2 class="title section-title--accent">Онлайн-запись</h2>
+          <p class="title section-title--accent modal-text">Онлайн-запись</p>
           <form class="modal-form">
             <div class="modal-form__thumb">
               <label class="modal-form__label">
@@ -348,11 +348,9 @@
               <textarea class="modal-form__textarea" name="comments" rows="6" placeholder="сообщение"></textarea>
             </label>
           </div>
-         
             <button class="button" type="submit">
               Отправить
             </button>
-         
           </form>
         </section>
         <section class="section contacts content-box" id="contacts">
@@ -410,6 +408,40 @@
     </div>
     </div>
   </footer>
+  
+  <div data-modal class="backdrop is-hidden data-backdrop">
+    <div class="modal">
+          <form class="modal-form">
+            <div class="modal-form__thumb">
+              <p class="title section-title--accent modal-text">Онлайн-запись</p>
+              <label class="modal-form__label">
+                <input class="modal-form__input" type="text" name="user-name" placeholder="имя">
+              </label>
+              <label class="modal-form__label">
+                <input class="modal-form__input" type="tel" name="tel" placeholder="телефон">
+              </label>
+            </div>
+            <div class="modal-form__thumb">
+            <label>
+              <textarea class="modal-form__textarea" name="comments" rows="6" placeholder="сообщение"></textarea>
+            </label>
+          </div>
+         
+            <button data-modal-open class="button " type="submit">
+              Отправить
+            </button>
+         
+          </form>
+      <button data-modal-close class="btn-close ">
+        <svg width="20" height="20">
+          <use href="./images/svg/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      
+    </div>
+  </div>
+
+  <script src="/js/modal.js"></script>
 </body>
 
 </html>
