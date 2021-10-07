@@ -1,0 +1,28 @@
+.web--rotate {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  width: 115px;
+  bottom: 0;
+}
+
+.web__list {
+  display: inline-flex;
+  align-items: center;
+}
+
+.web__list--rotate {
+  transform: rotate(-90deg) translateX(30%);
+  padding-bottom: 158px;
+}
+
+.web__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  margin-left: 20px;
+}

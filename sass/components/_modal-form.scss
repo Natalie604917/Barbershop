@@ -1,65 +1,70 @@
-textarea,
-input {
-  resize: none;
-  &::placeholder {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    color: var(--placeholder-color);
-  }
+.modal-form {
+  position: relative;
+  font-size: 0;
+  background-color: var(--bg-color);
+  
 }
 
 .modal-form__thumb {
-  width: calc(100% / 6 * 6);
+  width: 100%;
   margin-bottom: 44px;
-}
-.modal-form {
-  position: relative;
-  background-color: var(--bg-color);
-}
-
-.backdrop .modal-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 630px;
-  padding: 40px 30px;
-}
-
-.backdrop .modal-text {
-  text-align: center;
-}
-
-.modal-form__input {
-  color: var(--inverse-main-color);
-  background-color: transparent;
-  border-color: var(--inverse-accent-color);
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border-bottom-width: 1px;
-  width: 260px;
 }
 
 .modal-form__label:not(:last-child) {
   margin-right: 30px;
 }
+
+.modal-form__input {
+  width: calc((100% - 30px) / 2);
+  padding-bottom: 8px;
+}
+
 .modal-form__textarea {
-  color: var(--inverse-main-color);
-  background-color: transparent;
-  border-color: var(--inverse-accent-color);
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
+  resize: none;
+  min-height: 76px;
   width: 100%;
 }
 
+.modal-form__input,
 .modal-form__textarea {
-  max-height: 76px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--inverse-main-color);
+  background-color: transparent;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--inverse-accent-color);
+
+  &:focus {
+    outline: none;
+    border-bottom-color: var(--inverse-main-color);
+  }
 }
 
+.modal-form__input::placeholder,
+.modal-form__textarea::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--placeholder-color);
+}
+
+.modal-form__input:focus::placeholder,
+.modal-form__textarea:focus::placeholder {
+  color: var(--inverse-main-color);
+}
+
+.modal-form__input:invalid,
+.modal-form__textarea:invalid {
+  color: red;
+}
 

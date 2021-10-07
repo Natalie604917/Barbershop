@@ -22,7 +22,7 @@
 
 .pages__link--active {
   position: relative;
-  color: currentColor;
+  color: var(--inverse-accent-color);
 }
 .pages__link--active::after {
   position: absolute;

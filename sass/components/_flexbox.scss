@@ -1,0 +1,7 @@
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.content-box {
+  flex-basis: calc((100% - 30px) / 2);
+}
