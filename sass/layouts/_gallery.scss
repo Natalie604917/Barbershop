@@ -3,7 +3,15 @@
 }
 
 .gallery__item {
-  --grid__item: 4;
+  --grid__item: 1;
   align-items: center;
   max-width: 270px;
+
+  @media screen and (min-width: 768px) {
+    --grid__item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid__item: 4;
+  }
 }

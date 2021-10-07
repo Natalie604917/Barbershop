@@ -21,11 +21,14 @@
   border-radius: 50%;
   background-color: var(--inverse-main-color);
 
-  transition-property: fill;
-  transition-duration: 2500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover .social__icon,
   &:focus .socials__icon {
     fill: var(--accent-color);
   }
+}
+
+.social__icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
