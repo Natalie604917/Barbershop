@@ -10,11 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
       <nav class="navigation">
         <a class="link logo header__logo" href="./">
@@ -45,9 +45,33 @@
           <a class="button" href="#feedback">онлайн-запись</a>
         </li>
       </ul>
+      <button class="mobile-menu-btn">
+        <svg class="mobile-menu-icon" width="40" height="40">
+          <use class="icon-menu" href="./images/svg/icons.svg#icon-menu"></use>
+          <use class="icon-close" href="./images/svg/icons.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
   </header>
-  <main>
+  <div class="mobile-overlay">
+    <div class="mobile-menu" data-menu>
+      <ul class="list menu--mobile">
+        <li class="menu__item">
+          <a class="link menu__link " href="#about">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#prices">Услуги и цены</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#team">Мастера</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link " href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- <main>
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content">
@@ -188,146 +212,148 @@
             прочувствовать, чем 10 раз прочитать.
           </p>
         </div>
-      </div>
-    </section>
-    <section class="section team" id="team">
-      <div class="container team__container">
-        <p class="label team__label line">для настоящих ценителей атмосферы</p>
-        <h2 class="title section-title team__title">Наши мастера</h2>
-        <ul class="list team__list grid">
-          <li class="grid__item team__item">
-            <img src="./images/team/John_Smith.jpg" width="370" height="346" alt="John Smith" />
-            <div class="team__content">
-              <h3>John Smith</h3>
-              <p>Extreme Barber</p>
-            </div>
-            <ul class="social list">
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="grid__item team__item">
-            <img src="./images/team/Michele_Doe.jpg" width="370" height="346" alt="Michele Doe" />
-            <div class="team__content">
-              <h3>Michele Doe</h3>
-              <p>Extreme Barber</p>
-            </div>
-            <ul class="social list">
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="grid__item team__item">
-            <img src="./images/team/Alan_Black.jpg" width="370" height="346" alt="Alan Black" />
-            <div class="team__content">
-              <h3>Alan Black</h3>
-              <p>Extreme Barber</p>
-            </div>
-            <ul class="social list">
-              <li class="social__item">
-                <a href="./" class="link social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-      </div>
-    </section> -->
-    <section class="section gallery">
-      <div class="container">
-        <h2 class="title visually-hidden">галерея</h2>
-        <p class="label gallery__label line">На латинском языке “барба” означает “борода”</p>
-        <ul class="list gallery__list grid">
-          <li class="gallery__item grid__item">
-            <img src="./images/gallery/gallery_1.jpg" width="270" height="360" alt="стрижка" />
-          </li>
-          <li class="gallery__item grid__item">
-            <img src="./images/gallery/gallery_2.jpg" width="270" height="360" alt="бритье" />
-          </li>
-          <li class="gallery__item grid__item">
-            <img src="./images/gallery/gallery_3.jpg" width="270" height="360" alt="уход после бритья" />
-          </li>
-          <li class="gallery__item grid__item">
-            <img src="./images/gallery/gallery_4.jpg" width="270" height="360" alt="аккуратный затылок" />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- <div class="dark-bg ">
+      <!-- </div> 
+    </section>  -->
+  <section class="section team" id="team">
+    <div class="container team__container">
+      <p class="label team__label line">для настоящих ценителей атмосферы</p>
+      <h2 class="title section-title team__title">Наши мастера</h2>
+      <ul class="list team__list grid">
+        <li class="grid__item team__item">
+          <img src="./images/team/John_Smith.jpg" width="370" height="346" alt="John Smith" />
+          <div class="team__content">
+            <h3>John Smith</h3>
+            <p>Extreme Barber</p>
+          </div>
+          <ul class="social list">
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="grid__item team__item">
+          <img src="./images/team/Michele_Doe.jpg" width="370" height="346" alt="Michele Doe" />
+          <div class="team__content">
+            <h3>Michele Doe</h3>
+            <p>Extreme Barber</p>
+          </div>
+          <ul class="social list">
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link " target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="grid__item team__item">
+          <img src="./images/team/Alan_Black.jpg" width="370" height="346" alt="Alan Black" />
+          <div class="team__content">
+            <h3>Alan Black</h3>
+            <p>Extreme Barber</p>
+          </div>
+          <ul class="social list">
+            <li class="social__item">
+              <a href="./" class="link social__link" target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="./" class="social__link" target="_blank" rel="noopener norefferrer">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+    </div>
+  </section>
+  <section class="section gallery">
+    <div class="container gallery__container">
+      <h2 class="title visually-hidden">галерея</h2>
+      <p class="label gallery__label line">
+        На латинском языке “барба” означает “борода”
+      </p>
+      <ul class="list gallery__list grid">
+        <li class="gallery__item grid__item">
+          <img src="./images/gallery/gallery_1.jpg" width="270" height="360" alt="стрижка" />
+        </li>
+        <li class="gallery__item grid__item">
+          <img src="./images/gallery/gallery_2.jpg" width="270" height="360" alt="бритье" />
+        </li>
+        <li class="gallery__item grid__item">
+          <img src="./images/gallery/gallery_3.jpg" width="270" height="360" alt="уход после бритья" />
+        </li>
+        <li class="gallery__item grid__item">
+          <img src="./images/gallery/gallery_4.jpg" width="270" height="360" alt="аккуратный затылок" />
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- <div class="dark-bg ">
       <div class="container flexbox">
         <section class="section  content-box" id="feedback">
           <p class="title section-title--accent modal-text">Онлайн-запись</p>

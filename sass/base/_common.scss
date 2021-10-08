@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid red;
+  outline: 2px solid red;
 }
 
 h1,
@@ -60,6 +60,7 @@ img {
   text-decoration: none;
   font-style: normal;
   cursor: pointer;
+  color: var(--secondary-color);
   &:focus,
   &:hover {
     color: var(--accent-color);
@@ -73,7 +74,6 @@ img {
     padding: 0;
   }
 }
-
 
 .label {
   display: flex;

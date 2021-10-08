@@ -2,16 +2,25 @@
   margin-bottom: 44px;
 }
 
+.gallery__list {
+  @media screen and (max-width: 1199.98px) {
+    justify-content: center;
+  }
+}
+
 .gallery__item {
   --grid__item: 1;
   align-items: center;
-  max-width: 270px;
+  max-width: 420px;
+  background-color: aqua;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     --grid__item: 2;
+    max-width: 330px;
   }
 
   @media screen and (min-width: 1200px) {
     --grid__item: 4;
+    max-width: 270px;
   }
 }
