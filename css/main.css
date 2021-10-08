@@ -299,7 +299,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 h1,
@@ -510,6 +509,31 @@ sup {
   z-index: 200;
 }
 
+.mobile-menu-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-menu {
+  width: 24px;
+  height: 16px;
+  fill: var(--inverse-main-color);
+}
+
+.icon-close {
+  width: 19px;
+  height: 19px;
+  display: none;
+}
+
+.is-open .icon-close {
+  display: block;
+}
+
+.is-open .icon-menu {
+  display: none;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -521,6 +545,7 @@ sup {
   padding: 118px 40px 60px;
   background: var(--inverse-main-color);
   box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+  transition: right 0.5s;
 }
 
 .mobile-menu.is-open {
@@ -557,12 +582,26 @@ sup {
   margin-right: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .feedback--mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .feedback__item:first-child {
+    margin-top: 64px;
+  }
+}
+
 .button_thumb {
   display: flex;
   justify-content: center;
 }
 
 .button {
+  display: inline-block;
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
@@ -680,6 +719,12 @@ sup {
 .web__list {
   display: inline-flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .web__list {
+    margin-top: 64px;
+  }
 }
 
 .web__list--rotate {

@@ -11,6 +11,10 @@
 .web__list {
   display: inline-flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 64px;
+  }
 }
 
 .web__list--rotate {

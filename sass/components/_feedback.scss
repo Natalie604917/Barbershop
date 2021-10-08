@@ -9,5 +9,15 @@
 .feedback__item:not(:last-child) {
   margin-right: 40px;
 }
-
-
+@media screen and (max-width: 767px) {
+  .feedback--mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .feedback__item:first-child {
+    margin-top: 64px;
+  }
+}
