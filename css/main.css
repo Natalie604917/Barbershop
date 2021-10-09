@@ -533,8 +533,8 @@ sup {
 }
 
 .icon-close {
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   display: none;
 }
 
@@ -551,7 +551,7 @@ sup {
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 340px;
+  max-width: 337px;
   height: 100vh;
   z-index: 100;
   padding: 118px 40px 60px;
@@ -578,6 +578,11 @@ sup {
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.1em;
+}
+
+.button--mobile {
+  width: 194px;
+  text-align: center;
 }
 
 .feedback {
@@ -678,7 +683,7 @@ sup {
 
 .pages {
   display: flex;
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .pages__list {
@@ -888,7 +893,7 @@ sup {
   left: 0;
   width: 100%;
   padding: 32px 0;
-  background-color: black;
+  background-color: rgba(128, 128, 128, 0.432);
 }
 
 .header__container {
@@ -918,16 +923,48 @@ sup {
 .hero {
   display: flex;
   align-items: center;
-}
-
-.hero__container {
   position: relative;
-  display: flex;
   align-items: flex-end;
-  background-image: url(/images/hero/hero.jpg);
+  background-image: url(/images/hero_desktop/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 115px 0;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero_desktop/hero@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(/images/hero_desktop/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero {
+    background-image: url(/images/hero_tablet/hero_tablet.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(/images/hero_mobile/hero_mobile.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero_desktop/hero@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero_tablet/hero_tablet@2x.jpg);
+  }
 }
 
 .hero__content {
@@ -1005,18 +1042,6 @@ sup {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
-  .prices {
-    background-image: url(/images/prices_tablet/prices_tablet@2x.jpg);
-  }
-}
-
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .prices {
-    background-image: url(/images/prices_mobile/prices_mobile@2x.jpg);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .prices {
     background-image: url(/images/prices_desktop/prices_desktop.jpg);
@@ -1032,6 +1057,24 @@ sup {
 @media screen and (max-width: 767px) {
   .prices {
     background-image: url(/images/prices_mobile/prices_mobile.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(/images/prices_desktop/prices_desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(/images/prices_tablet/prices_tablet@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(/images/prices_mobile/prices_mobile@2x.jpg);
   }
 }
 
@@ -1087,32 +1130,14 @@ sup {
   width: calc(100% / 6 * 4);
 }
 
-.contacts__list {
-  margin-bottom: 70px;
-}
-
-.contacts__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  color: var(--inverse-accent-color);
-  transition-property: stroke;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon {
-  stroke: var(--accent-color);
-}
-
 .contacts__icon {
   margin-right: 16px;
   stroke: var(--inverse-accent-color);
   fill: transparent;
+}
+
+.contacts__link {
+  color: var(--inverse-accent-color);
 }
 
 .info__label {

@@ -18,8 +18,8 @@
 }
 
 .icon-close {
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   display: none;
 }
 
@@ -37,7 +37,7 @@
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 340px;
+  max-width: 337px;
   height: 100vh;
   z-index: 100;
   padding: 118px 40px 60px;
@@ -67,4 +67,9 @@
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.1em;
+}
+
+.button--mobile {
+  width: 194px;
+  text-align: center;
 }
