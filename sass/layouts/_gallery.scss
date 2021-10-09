@@ -1,5 +1,10 @@
 .gallery__label {
   margin-bottom: 44px;
+  @media screen and (max-width: 767px) {
+    max-width: 418px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .gallery__list {
@@ -11,8 +16,9 @@
 .gallery__item {
   --grid__item: 1;
   align-items: center;
-  max-width: 420px;
-  background-color: aqua;
+  @media screen and (max-width: 767px) {
+    max-width: 420px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     --grid__item: 2;

@@ -8,8 +8,10 @@
   stroke: var(--inverse-accent-color);
   fill: transparent;
 }
-
-.contacts__link {
-  color: var(--inverse-accent-color);
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
+.contacts__list {
+  margin-bottom: 70px;
+}

@@ -1,15 +1,12 @@
 .hero {
   display: flex;
   align-items: center;
-
   position: relative;
-
   align-items: flex-end;
 
   background-image: url(/images/hero_desktop/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 115px 0;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -18,9 +15,12 @@
   }
   @media screen and (min-width: 1200px) {
     background-image: url(/images/hero_desktop/hero.jpg);
+    background-position: 115px 0;
+    min-width: 1600px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     background-image: url(/images/hero_tablet/hero_tablet.jpg);
+    min-width: 768px;
   }
   @media screen and (max-width: 767px) {
     background-image: url(/images/hero_mobile/hero_mobile.jpg);
@@ -104,11 +104,19 @@
 // }
 
 .hero__content {
-  // width: calc(100% / 12 * 5);
-  max-width: 500px;
-  margin-left: 200px;
-  padding-top: 272px;
-  padding-bottom: 206px;
+  @media screen and (min-width: 1200px) {
+    // width: calc(100% / 12 * 5);
+    max-width: 500px;
+    margin-left: 200px;
+    padding-top: 272px;
+    padding-bottom: 206px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: calc(100% / 4 * 3);
+    padding-top: 81px;
+    padding-bottom: 183px;
+  }
 }
 
 .hero__label {
@@ -116,12 +124,21 @@
 }
 
 .hero__title {
-  font-size: 72px;
-  line-height: 1.18;
-
+  font-size: 48px;
+  line-height: 1.17;
   color: var(--inverse-main-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 1.18;
+  }
 }
 
 .hero__text {
   color: var(--inverse-accent-color);
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 16px;
+    line-height: 1.63;
+  }
 }

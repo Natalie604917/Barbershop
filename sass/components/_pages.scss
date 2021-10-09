@@ -1,6 +1,9 @@
 .pages {
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .pages__list {

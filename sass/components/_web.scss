@@ -18,8 +18,13 @@
 }
 
 .web__list--rotate {
-  transform: rotate(-90deg) translateX(30%);
-  padding-bottom: 158px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    transform: rotate(-90deg) translateX(30%);
+    padding-bottom: 158px;
+  }
 }
 
 .web__link {
