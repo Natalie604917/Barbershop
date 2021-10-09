@@ -515,6 +515,12 @@ sup {
   z-index: 200;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
 .mobile-menu-icon {
   width: 40px;
   height: 40px;
@@ -987,14 +993,56 @@ sup {
 }
 
 .prices {
-  background-image: url(/images/hero/Slider_2.jpg);
+  background-image: url(/images/prices_desktop/prices_desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right bottom;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(/images/prices_desktop/prices_desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(/images/prices_tablet/prices_tablet@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(/images/prices_mobile/prices_mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prices {
+    background-image: url(/images/prices_desktop/prices_desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .prices {
+    background-image: url(/images/prices_tablet/prices_tablet.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .prices {
+    background-image: url(/images/prices_mobile/prices_mobile.jpg);
+  }
 }
 
 .prices__wrap {
-  display: flex;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .prices__wrap {
+    display: flex;
+  }
 }
 
 .prices__list {
