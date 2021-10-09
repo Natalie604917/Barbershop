@@ -459,6 +459,12 @@ sup {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    fill: var(--inverse-main-color);
+  }
+}
+
 .title {
   font-family: Raleway;
   font-weight: 700;
