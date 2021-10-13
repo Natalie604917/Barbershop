@@ -77,11 +77,11 @@
         <a class="button button--mobile button--inverse" href="#feedback">онлайн-запись</a>
       </li>
     </ul>
-    <ul class="list web__list  line">
-      <li class="web__item">
+    <ul class="list web__list--mobile  line">
+      <li class="web__item--mobile ">
         <a class="link web__link" href="./" target="_blank" rel="noopener noreferrer">Instagram</a>
       </li>
-      <li class="web__item">
+      <li class="web__item--mobile ">
         <a class="link web__link" href="./" target="_blank" rel="noopener noreferrer">Youtube</a>
       </li>
     </ul>
@@ -125,7 +125,7 @@
     <section class="section about" id="about">
       <div class="container about__container flexbox">
         <ul class="list about__list flexbox content-box">
-          <li class="content-box ">
+          <li class="about__item content-box ">
             <picture>
               <source
                 srcset="./images/about_desktop/beard_desktop.jpg 1x, ./images/about_desktop/beard_desktop@2x.jpg 2x"
@@ -136,7 +136,7 @@
               <img src="./images/about_desktop/beard_desktop.jpg" width="330" alt="барбер за работой" />
             </picture>  
           </li>
-          <li class="content-box">
+          <li class="about__item content-box">
             <picture>
               <source
                 srcset="./images/about_desktop/haircut_desktop.jpg 1x, ./images/about_desktop/haircut_desktop@2x.jpg 2x"
@@ -149,7 +149,7 @@
         </ul>
         <div class="content-box">
           <p class="label about__label line">О НАС</p>
-          <h2 class="title section-title">Лучший Барбершоп твоего города</h2>
+          <h2 class="title section-title about_title">Лучший Барбершоп твоего города</h2>
           <p class="about__description">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
             к нам.
@@ -212,9 +212,9 @@
         </div>
       </div>
     </section>
-    <!-- <section class="section benefits">
-      <div class="container flexbox">
-        <ul class="list grid benefits__list content-box">
+    <section class="section benefits">
+      <div class="container benefits_container flexbox">
+        <ul class="list grid benefits__list ">
           <li class="grid__item benefits__item">
             <span class="benefits__label">600<sup>+</sup>
             </span>
@@ -236,17 +236,17 @@
             <p class="benefits__text">Подарков постоянным клиентам</p>
           </li>
         </ul>
-
+      
         <div class="content-box">
           <p class=" label line">старая традиционная школа</p>
           <h2 class="title section-title">Почему приходят именно к нам?</h2>
-          <p>
+          <p class="benefits__description">
             О нас говорят только хорошее. Но лучше 1 раз увидеть и
             прочувствовать, чем 10 раз прочитать.
           </p>
         </div>
       </div>
-    </section> -->
+    </section> 
     <section class="section team" id="team">
       <div class="container team__container">
         <p class="label team__label line">для настоящих ценителей атмосферы</p>
@@ -464,9 +464,9 @@
       </div>
     </section>
     <div class="dark-bg ">
-      <div class="container flexbox">
+      <div class="container dark-bg__container flexbox">
         <section class="section  content-box" id="feedback">
-          <p class="title section-title--accent modal-text">Онлайн-запись</p>
+          <p class="title section-title--accent dark-bg__text">Онлайн-запись</p>
           <form class="modal-form">
             <div class="modal-form__thumb">
               <label class="modal-form__label">
@@ -491,11 +491,11 @@
         <section class="section contacts content-box" id="contacts">
           
           <div class="container contacts__container">
-            
-            <h2 class="title section-title--accent">Контакты</h2>
+            <h2 class="title section-title--accent contacts__title">Контакты</h2>
+            <div class="adress-thumb">
             <address>
               <ul class="list contacts__list">
-                <li class="contacts__item">
+                <li class="contacts__item ">
                   <a class="link contacts__link" href="https://goo.gl/maps/jNNBTizKwzE3MUzF9" target="_blank"
                     rel="noopener noreferrer">
                     <svg class="contacts__icon" width="24" height="24">
@@ -504,7 +504,7 @@
                     ул. Васильковая,7А Киев, 08132
                   </a>
                 </li>
-                <li class="contacts__item">
+                <li class="contacts__item ">
                   <a class="link contacts__link" href="tel:+380441111111">
                     <svg class="contacts__icon" width="24" height="24">
                       <use href="./images/svg/icons.svg#icon-phone"></use>
@@ -519,12 +519,13 @@
                 </li>
               </ul>
             </address>
-            <section class="info">
-              <div class="container">
+            <section class="info content-box">
+              <div class="container info__container">
                 <h3 class="label info__label line">время работы</h3>
                 <p class="info__text">Ежедневно с 9:00 до 22:00</p>
               </div>
             </section>
+          </div>
           </div>
         </section>
       </div>

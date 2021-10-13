@@ -11,16 +11,45 @@
 .about__text {
   font-size: 14px;
   line-height: 1.86;
-  letter-spacing: 0.02em;
   margin-bottom: 40px;
 }
 
 .about__description {
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.62;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    font-size: 16px;
+    line-height: 2.35;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .about__list {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: block;
+  }
+}
+
+.about__item {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    max-width: 330px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.about_title {
+  @media screen and (max-width: 1199.98px) {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
   }
 }

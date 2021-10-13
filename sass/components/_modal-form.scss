@@ -2,12 +2,6 @@
   position: relative;
   font-size: 0;
   background-color: var(--bg-color);
-  
-}
-
-.modal-form__thumb {
-  width: 100%;
-  margin-bottom: 44px;
 }
 
 .modal-form__label:not(:last-child) {
@@ -17,8 +11,19 @@
 .modal-form__input {
   width: calc((100% - 30px) / 2);
   padding-bottom: 8px;
-}
 
+  @media screen and (min-width: 1200px) {
+    max-width: 260px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 418px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 330px;
+  }
+}
 .modal-form__textarea {
   resize: none;
   min-height: 76px;
@@ -27,6 +32,7 @@
 
 .modal-form__input,
 .modal-form__textarea {
+  margin-bottom: 44px;
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
@@ -43,6 +49,11 @@
   &:focus {
     outline: none;
     border-bottom-color: var(--inverse-main-color);
+  }
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    min-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -67,4 +78,3 @@
 .modal-form__textarea:invalid {
   color: red;
 }
-

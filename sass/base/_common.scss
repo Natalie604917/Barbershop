@@ -1,12 +1,13 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid red;
+  outline: 2px solid red;
 }
 
 h1,
@@ -21,6 +22,7 @@ ul {
 }
 
 body {
+  overflow-x: hidden;
   font-family: Open Sans, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -96,12 +98,19 @@ img {
   height: 1px;
   background-color: currentColor;
   margin-right: 20px;
+  @media screen and (max-width: 479px) {
+    width: 40px;
+  }
 }
 .copyright {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   color: var(--inverse-accent-color);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
 }
 
 .dark-bg {

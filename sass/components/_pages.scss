@@ -1,6 +1,6 @@
 .pages {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
   }
@@ -10,6 +10,10 @@
   display: inline-flex;
   padding-bottom: 40px;
   padding-right: 55px;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding-bottom: 24px;
+    padding-right: 39px;
+  }
 }
 
 .pages__link {
