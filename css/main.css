@@ -300,7 +300,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 h1,
@@ -930,6 +929,12 @@ sup {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .modal-form__textarea {
+    width: 690px;
+  }
+}
+
 .modal-form__input::placeholder,
 .modal-form__textarea::placeholder {
   font-weight: 600;
@@ -948,6 +953,12 @@ sup {
 .modal-form__input:invalid,
 .modal-form__textarea:invalid {
   color: red;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .modal-form__thumb {
+    display: flex;
+  }
 }
 
 .backdrop {
@@ -1447,21 +1458,21 @@ sup {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .contacts__item {
+  .contacts__item:not(:first-child) {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1.4;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .contacts__item:not(:last-child) {
+  .contacts__list {
     flex-basis: calc((100% - 30px) / 2);
     margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .contacts__item:not(:last-child) {
+  .contacts__list {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 47px;
@@ -1470,7 +1481,6 @@ sup {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__title {
-    text-align: center;
     margin-bottom: 40px;
   }
 }

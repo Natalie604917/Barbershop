@@ -11,19 +11,17 @@
 .modal-form__input {
   width: calc((100% - 30px) / 2);
   padding-bottom: 8px;
-
   @media screen and (min-width: 1200px) {
     max-width: 260px;
   }
-
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 418px;
   }
-
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 330px;
   }
 }
+
 .modal-form__textarea {
   resize: none;
   min-height: 76px;
@@ -57,6 +55,12 @@
   }
 }
 
+.modal-form__textarea {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 690px;
+  }
+}
+
 .modal-form__input::placeholder,
 .modal-form__textarea::placeholder {
   font-weight: 600;
@@ -77,4 +81,10 @@
 .modal-form__input:invalid,
 .modal-form__textarea:invalid {
   color: red;
+}
+
+.modal-form__thumb {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+  }
 }
