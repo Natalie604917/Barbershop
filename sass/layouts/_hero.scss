@@ -48,65 +48,8 @@
   }
 }
 
-// .hero__container {
-//   position: relative;
-//   display: flex;
-//   align-items: flex-end;
-// background-image: url(/images/hero_desktop/hero.jpg);
-// background-size: cover;
-// background-repeat: no-repeat;
-// background-position: 115px 0;
-// }
-
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(/images/hero_desktop/hero@2x.jpg);
-//   }
-//   @media screen and (min-width: 1200px) {
-//     background-image: url(/images/hero_desktop/hero.jpg);
-//   }
-//   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-//     background-image: url(/images/hero_tablet/hero_tablet.jpg);
-//   }
-//   @media screen and (max-width: 767px) {
-//     background-image: url(/images/hero_mobile/hero_mobile.jpg);
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .hero__container {
-//       background-image: url(/images/hero_desktop/hero@2x.jpg);
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .hero__container {
-//       background-image: url(/images/hero_tablet/hero_tablet@2x.jpg);
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 767px) {
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .hero__container {
-//       background-image: url(/images/hero_mobile/hero_mobile@2x.jpg);
-//     }
-//   }
-// }
-
 .hero__content {
   @media screen and (min-width: 1200px) {
-    // width: calc(100% / 12 * 5);
     max-width: 500px;
     margin-left: 200px;
     padding-top: 272px;
@@ -114,15 +57,16 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: calc(100% / 4 * 3);
-    padding-top: 81px;
+    max-width: 306px;
+    margin-left: 31px;
+    padding-top: 208px;
     padding-bottom: 183px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    width: calc(100% / 5 * 4);
     max-width: 355px;
     padding-top: 156px;
-    padding-bottom: 120px;
+    padding-bottom: 181px;
+    margin-top: 156px;
     margin-left: auto;
     margin-right: auto;
   }

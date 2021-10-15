@@ -12,9 +12,10 @@
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-
-  min-width: 160px;
-  padding: 12px 20px;
+  text-align: center;
+  width: 160px;
+  height: 40px;
+  padding: 12px 0;
   border-radius: 25px;
 
   color: var(--inverse-main-color);
@@ -33,5 +34,9 @@
 }
 
 .button--inverse {
-  color: var(--secondary-color);
+  @media screen and (max-width: 767px) {
+    color: var(--secondary-color);
+    width: 194px;
+    margin-bottom: 64px;
+  }
 }

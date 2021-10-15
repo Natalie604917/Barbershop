@@ -56,7 +56,10 @@
     display: flex;
   }
   @media screen and (max-width: 1199.98px) {
-    padding: 30px 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
@@ -87,7 +90,11 @@
 .prices__item {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 20px;
+  }
 }
+
 .prices__item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -103,7 +110,7 @@
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 2.15;
   }
 }
 .prices__servise::after {
