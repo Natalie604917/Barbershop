@@ -378,7 +378,7 @@ img {
   line-height: 1.37;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--inverse-label-color);
   margin-bottom: 20px;
 }
 
@@ -627,6 +627,7 @@ sup {
   line-height: 1.33;
   letter-spacing: 0.1em;
   display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -700,7 +701,6 @@ sup {
 
 .button--inverse {
   color: var(--secondary-color);
-  width: 194px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -844,8 +844,8 @@ sup {
 
 @media screen and (min-width: 1200px) {
   .web__list--rotate {
-    transform: rotate(-90deg) translateX(30%);
-    padding-bottom: 143px;
+    transform: rotate(-90deg) translateX(30%) translateY(15%);
+    padding-bottom: 158px;
   }
 }
 
@@ -1102,7 +1102,7 @@ sup {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
     background-image: url(/images/hero_tablet/hero_tablet.jpg);
-    background-position: 120px 0;
+    background-position: 110px 0;
     min-width: 768px;
   }
 }
@@ -1179,6 +1179,14 @@ sup {
     font-size: 16px;
     line-height: 1.63;
   }
+}
+
+.hero__container {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -1485,6 +1493,10 @@ sup {
     font-size: 18px;
     line-height: 1.4;
   }
+}
+
+.contacts__list {
+  margin-bottom: 70px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
