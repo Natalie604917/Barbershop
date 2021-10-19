@@ -300,6 +300,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 h1,
@@ -429,7 +430,7 @@ sup {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     padding-left: 31px;
     padding-right: 31px;
@@ -494,6 +495,12 @@ sup {
   color: var(--secondary-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .section-title {
+    max-width: 420px;
+  }
+}
+
 .section-title--accent {
   font-size: 42px;
   line-height: 1.17;
@@ -507,6 +514,10 @@ sup {
 
 .menu {
   display: flex;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 767px) {
@@ -611,12 +622,16 @@ sup {
 }
 
 .feedback {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
   display: flex;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .feedback {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
@@ -632,7 +647,7 @@ sup {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .feedback__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -683,10 +698,13 @@ sup {
   background-color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+.button--inverse {
+  color: var(--secondary-color);
+  width: 194px;
+}
+
+@media screen and (min-width: 1200px) {
   .button--inverse {
-    color: var(--secondary-color);
-    width: 194px;
     margin-bottom: 64px;
   }
 }
@@ -827,13 +845,7 @@ sup {
 @media screen and (min-width: 1200px) {
   .web__list--rotate {
     transform: rotate(-90deg) translateX(30%);
-    padding-bottom: 158px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .web {
-    display: flex;
+    padding-bottom: 143px;
   }
 }
 
@@ -1033,6 +1045,12 @@ sup {
   padding: 32px 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header {
+    padding: 40px 0;
+  }
+}
+
 .header__container {
   display: flex;
   justify-content: flex-end;
@@ -1110,7 +1128,6 @@ sup {
 @media screen and (min-width: 1200px) {
   .hero__content {
     max-width: 500px;
-    margin-left: 200px;
     padding-top: 272px;
     padding-bottom: 206px;
   }
@@ -1129,8 +1146,8 @@ sup {
   .hero__content {
     max-width: 355px;
     padding-top: 156px;
-    padding-bottom: 181px;
-    margin-top: 156px;
+    padding-bottom: 191px;
+    margin-top: 116px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1280,6 +1297,12 @@ sup {
 @media screen and (max-width: 1199.98px) {
   .benefits__description {
     margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits {
+    padding-bottom: 79px;
   }
 }
 
