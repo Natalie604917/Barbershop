@@ -13,21 +13,24 @@
   display: inline-flex;
   align-items: center;
   color: var(--inverse-accent-color);
+
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
+    color: var(--accent-color);
+    stroke: var(--accent-color);
+  }
 }
 
 .contacts__icon {
   margin-right: 16px;
   stroke: var(--inverse-accent-color);
   fill: transparent;
+
   transition-property: stroke;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    stroke: var(--accent-color);
-  }
 }
+
 .contacts__item:not(:last-child) {
   margin-bottom: 20px;
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {

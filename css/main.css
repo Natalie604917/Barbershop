@@ -727,7 +727,7 @@ sup {
 }
 
 .social__link:hover .social__icon,
-.social__link:focus .socials__icon {
+.social__link:focus .social__icon {
   fill: var(--accent-color);
 }
 
@@ -1468,6 +1468,12 @@ sup {
   color: var(--inverse-accent-color);
 }
 
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+  color: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
 .contacts__icon {
   margin-right: 16px;
   stroke: var(--inverse-accent-color);
@@ -1475,10 +1481,6 @@ sup {
   transition-property: stroke;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__icon:hover, .contacts__icon:focus {
-  stroke: var(--accent-color);
 }
 
 .contacts__item:not(:last-child) {
