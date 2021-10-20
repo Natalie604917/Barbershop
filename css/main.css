@@ -1080,13 +1080,13 @@ sup {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero_desktop/hero@2x.jpg);
+    background-image: url(../images/hero_desktop/hero@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(/images/hero_desktop/hero.jpg);
+    background-image: url(../images/hero_desktop/hero.jpg);
     background-position: 115px 0;
     min-width: 1600px;
   }
@@ -1094,7 +1094,7 @@ sup {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
-    background-image: url(/images/hero_tablet/hero_tablet.jpg);
+    background-image: url(../images/hero_tablet/hero_tablet.jpg);
     background-position: 110px 0;
     min-width: 768px;
   }
@@ -1102,19 +1102,19 @@ sup {
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url(/images/hero_mobile/hero_mobile.jpg);
+    background-image: url(../images/hero_mobile/hero_mobile.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero_desktop/hero@2x.jpg);
+    background-image: url(../images/hero_desktop/hero@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero_tablet/hero_tablet@2x.jpg);
+    background-image: url(../images/hero_tablet/hero_tablet@2x.jpg);
   }
 }
 
@@ -1318,7 +1318,7 @@ sup {
 }
 
 .prices {
-  background-image: url(/images/prices_desktop/prices_desktop.jpg);
+  background-image: url(../images/prices_desktop/prices_desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right bottom;
@@ -1326,43 +1326,43 @@ sup {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .prices {
-    background-image: url(/images/prices_desktop/prices_desktop@2x.jpg);
+    background-image: url(../images/prices_desktop/prices_desktop@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .prices {
-    background-image: url(/images/prices_desktop/prices_desktop.jpg);
+    background-image: url(../images/prices_desktop/prices_desktop.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .prices {
-    background-image: url(/images/prices_tablet/prices_tablet.jpg);
+    background-image: url(../images/prices_tablet/prices_tablet.jpg);
   }
 }
 
 @media screen and (max-width: 767px) {
   .prices {
-    background-image: url(/images/prices_mobile/prices_mobile.jpg);
+    background-image: url(../images/prices_mobile/prices_mobile.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url(/images/prices_desktop/prices_desktop@2x.jpg);
+    background-image: url(../images/prices_desktop/prices_desktop@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url(/images/prices_tablet/prices_tablet@2x.jpg);
+    background-image: url(../images/prices_tablet/prices_tablet@2x.jpg);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url(/images/prices_mobile/prices_mobile@2x.jpg);
+    background-image: url(../images/prices_mobile/prices_mobile@2x.jpg);
   }
 }
 
