@@ -35,8 +35,4 @@
 
 .button--inverse {
   color: var(--secondary-color);
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 64px;
-  }
 }

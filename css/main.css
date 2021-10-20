@@ -300,7 +300,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 h1,
@@ -701,12 +700,6 @@ sup {
 
 .button--inverse {
   color: var(--secondary-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .button--inverse {
-    margin-bottom: 64px;
-  }
 }
 
 .social {
@@ -1163,6 +1156,12 @@ sup {
   color: var(--inverse-main-color);
 }
 
+@media screen and (max-width: 479px) {
+  .hero__title {
+    font-size: 43px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 72px;
@@ -1187,6 +1186,10 @@ sup {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about {
+  padding: 130px 0;
 }
 
 @media screen and (max-width: 767px) {

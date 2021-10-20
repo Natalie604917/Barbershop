@@ -76,6 +76,9 @@
 }
 
 .hero__title {
+  @media screen and (max-width: 479px) {
+    font-size: 43px;
+  }
   font-size: 48px;
   line-height: 1.17;
   color: var(--inverse-main-color);
