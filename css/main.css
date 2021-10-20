@@ -1034,17 +1034,19 @@ sup {
   z-index: 200;
   top: 0;
   left: 0;
+  display: flex;
   width: 100%;
-  padding: 32px 0;
+  padding: 32px 15px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .header {
-    padding: 40px 0;
+    padding: 40px 15px;
   }
 }
 
 .header__container {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1056,16 +1058,22 @@ sup {
   margin-right: auto;
 }
 
-.header__logo {
-  margin-right: 70px;
-}
-
 .header__link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--inverse-main-color);
+}
+
+.header__logo {
+  margin-right: 71px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header__logo {
+    margin-right: 64px;
+  }
 }
 
 .hero {
