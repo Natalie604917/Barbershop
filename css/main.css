@@ -281,14 +281,16 @@ summary {
   padding: 84px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .section {
     padding: 100px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  padding: 130px 0;
+  .section {
+    padding: 130px 0;
+  }
 }
 
 html {
@@ -1602,18 +1604,19 @@ sup {
   text-align: center;
 }
 
-.team__name {
-  font-weight: 400;
+@media screen and (min-width: 1200px) {
+  .team__content {
+    margin-top: 30px;
+  }
 }
 
-@media screen and (max-width: 1199.98px) {
-  .team__name {
-    font-size: 18px;
-    line-height: 1.39;
-    margin-top: 30px;
-    margin-bottom: 8px;
-    color: var(--secondary-color);
-  }
+.team__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
 }
 
 .team__text {
@@ -1726,5 +1729,9 @@ sup {
   .footer__list {
     line-height: 1.37;
   }
+}
+
+.dark-bg__button {
+  margin-bottom: 63px;
 }
 /*# sourceMappingURL=main.css.map */

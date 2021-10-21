@@ -34,18 +34,20 @@
 .team__content {
   font-weight: 400;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+  }
 }
 
 .team__name {
   font-weight: 400;
-  @media screen and (max-width: 1199.98px) {
-    font-size: 18px;
-    line-height: 1.39;
-    margin-top: 30px;
-    margin-bottom: 8px;
 
-    color: var(--secondary-color);
-  }
+  font-size: 18px;
+  line-height: 1.39;
+  margin-top: 30px;
+  margin-bottom: 8px;
+
+  color: var(--secondary-color);
 }
 
 .team__text {
